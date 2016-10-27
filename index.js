@@ -15,6 +15,9 @@ module.exports = {
     // These rules relate to possible syntax or logic errors in JavaScript code:
     // 'no-cond-assign': 'error',
     // 'no-console': 'error',
+    'no-console': ['error', {
+      'allow': ['info']
+    }],
     // 'no-constant-condition': 'error',
     // 'no-control-regex': 'error',
     // 'no-debugger': 'error',
@@ -83,6 +86,7 @@ module.exports = {
     // 'no-loop-func': 'off',
     // 'no-magic-numbers': 'off',
     // 'no-multi-spaces': 'off',
+    'no-multi-spaces': 'error',
     // 'no-multi-str': 'off',
     // 'no-new-func': 'off',
     // 'no-new-wrappers': 'off',
@@ -150,9 +154,14 @@ module.exports = {
     // 'array-bracket-spacing': 'off',
     // 'block-spacing': 'off',
     // 'brace-style': 'off',
+    'brace-style': ['error', '1tbs'],
     // 'camelcase': 'off',
     // 'comma-dangle': 'off',
     // 'comma-spacing': 'off',
+    'comma-spacing': ['error', {
+      'before': false,
+      'after': true
+    }],
     // 'comma-style': 'off',
     // 'computed-property-spacing': 'off',
     // 'consistent-this': 'off',
@@ -165,9 +174,19 @@ module.exports = {
     // 'id-length': 'off',
     // 'id-match': 'off',
     // 'indent': 'off',
+    'indent': ['error', 2],
     // 'jsx-quotes': 'off',
     // 'key-spacing': 'off',
+    'key-spacing': ['error', {
+      'beforeColon': false,
+      'afterColon': true,
+      'mode': 'strict'
+    }],
     // 'keyword-spacing': 'off',
+    'keyword-spacing': ['error', {
+      'before': true,
+      'after': true
+    }],
     // 'line-comment-position': 'off',
     // 'linebreak-style': 'off',
     // 'lines-around-comment': 'off',
@@ -214,14 +233,20 @@ module.exports = {
     // 'padded-blocks': 'off',
     // 'quote-props': 'off',
     // 'quotes': 'off',
+    'quotes': ['error', 'single', {
+      'avoidEscape': true
+    }],
     // 'require-jsdoc': 'off',
     // 'semi-spacing': 'off',
     // 'semi': 'off',
     // 'sort-keys': 'off',
     // 'sort-vars': 'off',
     // 'space-before-blocks': 'off',
+    'space-before-blocks': ['error', 'always'],
     // 'space-before-function-paren': 'off',
+    'space-before-function-paren': ['error', 'never'],
     // 'space-in-parens': 'off',
+    'space-in-parens': ['error', 'never']
     // 'space-infix-ops': 'off',
     // 'space-unary-ops': 'off',
     // 'spaced-comment': 'off',
