@@ -13,6 +13,7 @@ module.exports = {
   globals: {
     Polymer: false,
     WCT: false,
+    assert: false,
     fixture: false,
     suite: false,
     test: false
