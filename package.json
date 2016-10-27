@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-ibmresearch",
+  "version": "0.0.0",
+  "description": "ESLint shareable config for the IBM Research JavaScript style guide",
+  "author": "The IBM Research Emergent Solutions authors",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "license": "MIT",
+  "repository": "IBMResearch/eslint-config-ibmresearch",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^3.8.0"
+  },
+  "peerDependencies": {
+    "eslint": "^3.8.0"
+  },
+  "engines": {
+    "node": ">=4.0"
+  }
+}
