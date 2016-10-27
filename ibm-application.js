@@ -9,7 +9,7 @@
 'use strict';
 
 module.exports = {
-  extends: 'ibmresearch/element',
+  extends: 'ibmresearch/ibm-element',
   env: {
     es6: true
   },
