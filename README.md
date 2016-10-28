@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-npm install --save-dev eslint eslint-config-ibmresearch
+npm install --save-dev eslint eslint-plugin-html eslint-config-ibmresearch
 ```
 
 ## Usage
