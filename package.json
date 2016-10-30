@@ -11,7 +11,7 @@
   "repository": "IBMResearch/eslint-config-ibmresearch",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^3.8.0",
+    "eslint": "^3.9.0",
     "eslint-plugin-html": "^1.5.0"
   },
   "engines": {
