@@ -153,11 +153,17 @@ module.exports = {
     // Stylistic Issues (http://eslint.org/docs/rules/#stylistic-issues)
     // These rules relate to style guidelines, and are therefore quite subjective:
     // 'array-bracket-spacing': 'off',
+    'array-bracket-spacing': ['error', 'never'],
     // 'block-spacing': 'off',
+    'block-spacing': ['error', 'always'],
     // 'brace-style': 'off',
     'brace-style': ['error', '1tbs'],
     // 'camelcase': 'off',
+    'camelcase': ['error', {
+      'properties': 'always'
+    }],
     // 'comma-dangle': 'off',
+    'comma-dangle': ['error', 'never'],
     // 'comma-spacing': 'off',
     'comma-spacing': ['error', {
       'before': false,
@@ -165,9 +171,12 @@ module.exports = {
     }],
     // 'comma-style': 'off',
     // 'computed-property-spacing': 'off',
+    'computed-property-spacing': ['error', 'never'],
     // 'consistent-this': 'off',
     // 'eol-last': 'off',
+    'eol-last': ['error', 'always'],
     // 'func-call-spacing': 'off',
+    'func-call-spacing': ['error', 'never'],
     // 'func-name-matching': 'off',
     // 'func-names': 'off',
     // 'func-style': 'off',
@@ -213,6 +222,9 @@ module.exports = {
     // 'no-mixed-operators': 'off',
     // 'no-mixed-spaces-and-tabs': 'error',
     // 'no-multiple-empty-lines': 'off',
+    'no-multiple-empty-lines': ['error', {
+      max: 2
+    }],
     // 'no-negated-condition': 'off',
     // 'no-nested-ternary': 'off',
     // 'no-new-object': 'off',
