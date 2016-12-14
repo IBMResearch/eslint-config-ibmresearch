@@ -9,13 +9,8 @@
 'use strict';
 
 module.exports = {
-  extends: 'ibmresearch/ibm-element',
-  env: {
-    es6: true
-  },
+  extends: 'ibmresearch/html',
   globals: {
-    module: false,
-    process: false,
-    require: false
+    Polymer: false
   }
 };
