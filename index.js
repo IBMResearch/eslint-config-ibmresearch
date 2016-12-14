@@ -13,6 +13,7 @@ module.exports = {
   rules: {
     // Possible Errors (http://eslint.org/docs/rules/#possible-errors)
     // These rules relate to possible syntax or logic errors in JavaScript code:
+    // 'no-await-in-loop': 'off',
     // 'no-cond-assign': 'error',
     // 'no-console': 'error',
     'no-console': ['error', {
@@ -98,6 +99,7 @@ module.exports = {
     // 'no-redeclare': 'error',
     // 'no-restricted-properties': 'off',
     // 'no-return-assign': 'off',
+    // 'no-return-await': 'off',
     // 'no-script-url': 'off',
     // 'no-self-assign': 'error',
     // 'no-self-compare': 'off',
@@ -114,6 +116,7 @@ module.exports = {
     // 'no-warning-comments': 'off',
     // 'no-with': 'off',
     // 'radix': 'off',
+    // 'require-await': 'off',
     // 'vars-on-top': 'off',
     // 'wrap-iife': 'off',
     // 'yoda': 'off',
@@ -162,6 +165,7 @@ module.exports = {
     'camelcase': ['error', {
       'properties': 'always'
     }],
+    // 'capitalized-comments': 'off',
     // 'comma-dangle': 'off',
     'comma-dangle': ['error', 'never'],
     // 'comma-spacing': 'off',
