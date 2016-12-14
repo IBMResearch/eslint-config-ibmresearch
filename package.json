@@ -10,6 +10,9 @@
   "license": "MIT",
   "repository": "IBMResearch/eslint-config-ibmresearch",
   "main": "index.js",
+  "devDependencies": {
+    "eslint": "^3.9.0"
+  },
   "peerDependencies": {
     "eslint": "^3.9.0",
     "eslint-plugin-html": "^1.5.0"
