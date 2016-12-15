@@ -166,6 +166,9 @@ module.exports = {
       'properties': 'always'
     }],
     // 'capitalized-comments': 'off',
+    'capitalized-comments': ['error', 'always', {
+      'ignoreConsecutiveComments': true
+    }],
     // 'comma-dangle': 'off',
     'comma-dangle': ['error', 'never'],
     // 'comma-spacing': 'off',
@@ -174,9 +177,11 @@ module.exports = {
       'after': true
     }],
     // 'comma-style': 'off',
+    'comma-style': ['error', 'last'],
     // 'computed-property-spacing': 'off',
     'computed-property-spacing': ['error', 'never'],
     // 'consistent-this': 'off',
+    'consistent-this': ['error', 'that'],
     // 'eol-last': 'off',
     'eol-last': ['error', 'always'],
     // 'func-call-spacing': 'off',
