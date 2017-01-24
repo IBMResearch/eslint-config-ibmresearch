@@ -259,6 +259,7 @@ module.exports = {
     // 'no-lonely-if': 'off',
     // 'no-mixed-operators': 'off',
     // 'no-mixed-spaces-and-tabs': 'error',
+    'no-mixed-spaces-and-tabs': 'error',
     // 'no-multiple-empty-lines': 'off',
     'no-multiple-empty-lines': ['error', {
       max: 2
@@ -271,9 +272,13 @@ module.exports = {
     // 'no-tabs': 'off',
     // 'no-ternary': 'off',
     // 'no-trailing-spaces': 'off',
+    'no-trailing-spaces': ['error', {
+      skipBlankLines: false
+    }],
     // 'no-underscore-dangle': 'off',
     // 'no-unneeded-ternary': 'off',
     // 'no-whitespace-before-property': 'off',
+    'no-whitespace-before-property': 'error',
     // 'object-curly-newline': 'off',
     // 'object-curly-spacing': ['off', 'never'],
     'object-curly-spacing': ['error', 'never'],
@@ -300,18 +305,30 @@ module.exports = {
       omitLastInOneLineBlock: true
     }],
     // 'sort-keys': 'off',
+    'sort-keys': 'off',
     // 'sort-vars': 'off',
+    'sort-vars': 'off',
     // 'space-before-blocks': 'off',
     'space-before-blocks': ['error', 'always'],
     // 'space-before-function-paren': 'off',
     'space-before-function-paren': ['error', 'never'],
     // 'space-in-parens': 'off',
-    'space-in-parens': ['error', 'never']
+    'space-in-parens': ['error', 'never'],
     // 'space-infix-ops': 'off',
+    'space-infix-ops': ['error', {
+      int32Hint: false
+    }],
     // 'space-unary-ops': 'off',
+    'space-unary-ops': ['error', {
+      words: true,
+      nonwords: false
+    }],
     // 'spaced-comment': 'off',
+    'spaced-comment': ['error', 'always'],
     // 'unicode-bom': 'off',
+    'unicode-bom': ['error', 'never'],
     // 'wrap-regex': 'off',
+    'wrap-regex': 'off',
 
     // ECMAScript 6 (http://eslint.org/docs/rules/#ecmascript-6)
     // These rules relate to ES6, also known as ES2015:
