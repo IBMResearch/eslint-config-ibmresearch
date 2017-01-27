@@ -18,6 +18,6 @@ module.exports = {
   ],
   settings: {
     'html/indent': '+2',
-    'html/report-bad-indent': 2
+    'html/report-bad-indent': 'error'
   }
 };

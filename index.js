@@ -261,6 +261,8 @@ module.exports = {
     // 'no-mixed-operators': 'off',
     // 'no-mixed-spaces-and-tabs': 'error',
     'no-mixed-spaces-and-tabs': 'error',
+    // 'no-multi-assign': 'off',
+    'no-multi-assign': 'error',
     // 'no-multiple-empty-lines': 'off',
     'no-multiple-empty-lines': ['error', {
       max: 2
@@ -372,7 +374,9 @@ module.exports = {
     // 'object-shorthand': 'off',
     // 'prefer-arrow-callback': 'off',
     // 'prefer-const': 'off',
+    // 'prefer-destructuring': 'off',
     // 'prefer-numeric-literals': 'off',
+    // 'prefer-promise-reject-errors': 'off',
     // 'prefer-rest-params': 'off',
     // 'prefer-spread': 'off',
     // 'prefer-template': 'off',
