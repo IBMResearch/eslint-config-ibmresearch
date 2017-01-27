@@ -224,6 +224,7 @@ module.exports = {
     // 'indent': 'off',
     'indent': ['error', 2],
     // 'jsx-quotes': 'off',
+    'jsx-quotes': ['error', 'prefer-double'],
     // 'key-spacing': 'off',
     'key-spacing': ['error', {
       'beforeColon': false,
@@ -266,29 +267,48 @@ module.exports = {
     }],
     // 'no-negated-condition': 'off',
     // 'no-nested-ternary': 'off',
+    'no-nested-ternary': 'error',
     // 'no-new-object': 'off',
     // 'no-plusplus': 'off',
     // 'no-restricted-syntax': 'off',
     // 'no-tabs': 'off',
+    'no-tabs': 'error',
     // 'no-ternary': 'off',
+    'no-ternary': 'off',
     // 'no-trailing-spaces': 'off',
     'no-trailing-spaces': ['error', {
       skipBlankLines: false
     }],
     // 'no-underscore-dangle': 'off',
     // 'no-unneeded-ternary': 'off',
+    'no-unneeded-ternary': ['error', {
+      defaultAssignment: false
+    }],
     // 'no-whitespace-before-property': 'off',
     'no-whitespace-before-property': 'error',
     // 'object-curly-newline': 'off',
     // 'object-curly-spacing': ['off', 'never'],
     'object-curly-spacing': ['error', 'never'],
     // 'object-property-newline': 'off',
+    'object-property-newline': ['error', {
+      allowMultiplePropertiesPerLine: true
+    }],
     // 'one-var-declaration-per-line': 'off',
+    'one-var-declaration-per-line': ['error', 'always'],
     // 'one-var': 'off',
+    'one-var': ['error', 'never'],
     // 'operator-assignment': 'off',
+    'operator-assignment': ['error', 'always'],
     // 'operator-linebreak': 'off',
+    'operator-linebreak': 'off',
     // 'padded-blocks': 'off',
+    'padded-blocks': ['error', 'never'],
     // 'quote-props': 'off',
+    'quote-props': ['error', 'as-needed', {
+      keywords: false,
+      unnecessary: true,
+      numbers: false
+    }],
     // 'quotes': 'off',
     'quotes': ['error', 'single', {
       'avoidEscape': true
