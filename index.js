@@ -195,7 +195,7 @@ module.exports = {
       'properties': 'always'
     }],
     // 'capitalized-comments': 'off',
-    'capitalized-comments': ['error', 'always', {
+    'capitalized-comments': ['warn', 'always', {
       'ignoreConsecutiveComments': true
     }],
     // 'comma-dangle': 'off',
