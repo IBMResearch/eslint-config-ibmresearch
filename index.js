@@ -347,6 +347,8 @@ module.exports = {
     }],
     // 'spaced-comment': 'off',
     'spaced-comment': ['error', 'always'],
+    // 'template-tag-spacing': 'off',
+    'template-tag-spacing': ['error', 'never'],
     // 'unicode-bom': 'off',
     'unicode-bom': ['error', 'never'],
     // 'wrap-regex': 'off',
