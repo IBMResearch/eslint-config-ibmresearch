@@ -14,6 +14,8 @@ module.exports = {
     // Possible Errors (http://eslint.org/docs/rules/#possible-errors)
     // These rules relate to possible syntax or logic errors in JavaScript code:
     // 'no-await-in-loop': 'off',
+    // 'no-compare-neg-zero': 'off',
+    'no-compare-neg-zero': 'error',
     // 'no-cond-assign': 'error',
     'no-cond-assign': ['error', 'except-parens'],
     // 'no-console': 'error',
@@ -288,6 +290,8 @@ module.exports = {
     }],
     // 'no-whitespace-before-property': 'off',
     'no-whitespace-before-property': 'error',
+    // 'nonblock-statement-body-position': 'off',
+    'nonblock-statement-body-position': ['error', 'below'],
     // 'object-curly-newline': 'off',
     // 'object-curly-spacing': ['off', 'never'],
     'object-curly-spacing': ['error', 'never'],
