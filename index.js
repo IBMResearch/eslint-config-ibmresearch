@@ -14,14 +14,13 @@ module.exports = {
     // Possible Errors (http://eslint.org/docs/rules/#possible-errors)
     // These rules relate to possible syntax or logic errors in JavaScript code:
     // 'no-await-in-loop': 'off',
+    'no-await-in-loop': 'error',
     // 'no-compare-neg-zero': 'off',
     'no-compare-neg-zero': 'error',
     // 'no-cond-assign': 'error',
     'no-cond-assign': ['error', 'except-parens'],
     // 'no-console': 'error',
-    'no-console': ['error', {
-      'allow': ['info']
-    }],
+    'no-console': ['error'],
     // 'no-constant-condition': 'error',
     'no-constant-condition': 'error',
     // 'no-control-regex': 'error',
@@ -218,13 +217,31 @@ module.exports = {
     // 'func-call-spacing': 'off',
     'func-call-spacing': ['error', 'never'],
     // 'func-name-matching': 'off',
+    'func-name-matching': ['error', 'always'],
     // 'func-names': 'off',
+    'func-names': ['off', 'always'],
     // 'func-style': 'off',
+    'func-style': ['off', 'expression'],
     // 'id-blacklist': 'off',
+    'id-blacklist': 'off',
     // 'id-length': 'off',
+    'id-length': ['error', {
+      'min': 2
+    }],
     // 'id-match': 'off',
+    'id-match': 'off',
     // 'indent': 'off',
-    'indent': ['error', 2],
+    'indent': ['error', 2, {
+      'SwitchCase': 1,
+      // 'VariableDeclarator': null,
+      'outerIIFEBody': 1,
+      'MemberExpression': 1,
+      // 'FunctionDeclaration': null,
+      // 'FunctionExpression': null,
+      // 'CallExpression': null,
+      'ArrayExpression': 1,
+      'ObjectExpression': 1,
+    }],
     // 'jsx-quotes': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
     // 'key-spacing': 'off',
@@ -284,6 +301,7 @@ module.exports = {
       skipBlankLines: false
     }],
     // 'no-underscore-dangle': 'off',
+    'no-underscore-dangle': 'off',
     // 'no-unneeded-ternary': 'off',
     'no-unneeded-ternary': ['error', {
       defaultAssignment: false
