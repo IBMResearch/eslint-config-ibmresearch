@@ -1,6 +1,6 @@
 /**
  * @license
- * Copyright (c) 2016 The IBM Research Emergent Solutions authors. All rights reserved.
+ * Copyright (c) 2016 The IBM Research authors. All rights reserved.
  * This code may only be used under the MIT style license found at https://ibmresearch.github.io/LICENSE.txt
  * The complete set of authors may be found at https://ibmresearch.github.io/AUTHORS.txt
  * The complete set of contributors may be found at https://ibmresearch.github.io/CONTRIBUTORS.txt
@@ -256,28 +256,88 @@ module.exports = {
       'after': true
     }],
     // 'line-comment-position': 'off',
+    'line-comment-position': ['off', {
+      'position': 'above',
+      'applyDefaultPatterns': true,
+    }],
     // 'linebreak-style': 'off',
+    'linebreak-style': ['error', 'unix'],
     // 'lines-around-comment': 'off',
+    'lines-around-comment': 'off',
     // 'lines-around-directive': 'off',
+    'lines-around-directive': ['error', {
+      'before': 'always',
+      'after': 'always',
+    }],
     // 'max-depth': 'off',
+    'max-depth': ['error', 4],
     // 'max-len': 'off',
+    'max-len': ['error', 80, 2, {
+      'ignoreComments': false,
+      'ignoreUrls': true,
+      'ignoreStrings': true,
+      'ignoreTemplateLiterals': true,
+      'ignoreRegExpLiterals': true
+    }],
     // 'max-lines': 'off',
+    'max-lines': ['off', {
+      'max': 300,
+      'skipBlankLines': true,
+      'skipComments': true
+    }],
     // 'max-nested-callbacks': 'off',
+    'max-nested-callbacks': 'off',
     // 'max-params': 'off',
+    'max-params': ['off', 3],
     // 'max-statements-per-line': 'off',
+    'max-statements-per-line': ['off', {
+      'max': 1
+    }],
     // 'max-statements': 'off',
+    'max-statements': ['off', 10],
     // 'multiline-ternary': 'off',
+    'multiline-ternary': ['error', 'never'],
     // 'new-cap': 'off',
+    'new-cap': ['error', {
+      'newIsCap': true,
+      'capIsNew': false,
+      // 'newIsCapExceptions': [],
+      // 'newIsCapExceptionPattern': null,
+      // 'capIsNewExceptions': [],
+      // 'capIsNewExceptionPattern': null,
+      'properties': false,
+    }],
     // 'new-parens': 'off',
+    'new-parens': 'error',
     // 'newline-after-var': 'off',
+    'newline-after-var': 'off',
     // 'newline-before-return': 'off',
+    'newline-before-return': 'error',
     // 'newline-per-chained-call': 'off',
+    'newline-per-chained-call': ['error', {
+      'ignoreChainWithDepth': 4
+    }],
     // 'no-array-constructor': 'off',
+    'no-array-constructor': 'error',
     // 'no-bitwise': 'off',
+    'no-bitwise': 'error',
     // 'no-continue': 'off',
+    'no-continue': 'error',
     // 'no-inline-comments': 'off',
+    'no-inline-comments': 'off',
     // 'no-lonely-if': 'off',
+    'no-lonely-if': 'error',
     // 'no-mixed-operators': 'off',
+    'no-mixed-operators': ['error', {
+      'groups': [
+        ['+', '-', '*', '/', '%', '**'],
+        ['&', '|', '^', '~', '<<', '>>', '>>>'],
+        ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+        ['&&', '||'],
+        ['in', 'instanceof']
+      ],
+      'allowSamePrecedence': false
+    }],
     // 'no-mixed-spaces-and-tabs': 'error',
     'no-mixed-spaces-and-tabs': 'error',
     // 'no-multi-assign': 'off',
@@ -287,10 +347,13 @@ module.exports = {
       'max': 2
     }],
     // 'no-negated-condition': 'off',
+    'no-negated-condition': 'off',
     // 'no-nested-ternary': 'off',
     'no-nested-ternary': 'error',
     // 'no-new-object': 'off',
+    'no-new-object': 'error',
     // 'no-plusplus': 'off',
+    'no-plusplus': 'error',
     // 'no-restricted-syntax': 'off',
     // 'no-tabs': 'off',
     'no-tabs': 'error',
@@ -311,8 +374,9 @@ module.exports = {
     // 'nonblock-statement-body-position': 'off',
     'nonblock-statement-body-position': ['error', 'below'],
     // 'object-curly-newline': 'off',
-    // 'object-curly-spacing': ['off', 'never'],
-    'object-curly-spacing': ['error', 'never'],
+    'object-curly-newline': ['off'],
+    // 'object-curly-spacing': ['off'],
+    'object-curly-spacing': ['error', 'always'],
     // 'object-property-newline': 'off',
     'object-property-newline': ['error', {
       'allowMultiplePropertiesPerLine': true
