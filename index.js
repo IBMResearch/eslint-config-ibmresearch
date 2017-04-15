@@ -284,7 +284,7 @@ module.exports = {
     'no-multi-assign': 'error',
     // 'no-multiple-empty-lines': 'off',
     'no-multiple-empty-lines': ['error', {
-      max: 2
+      'max': 2
     }],
     // 'no-negated-condition': 'off',
     // 'no-nested-ternary': 'off',
@@ -298,13 +298,13 @@ module.exports = {
     'no-ternary': 'off',
     // 'no-trailing-spaces': 'off',
     'no-trailing-spaces': ['error', {
-      skipBlankLines: false
+      'skipBlankLines': false
     }],
     // 'no-underscore-dangle': 'off',
     'no-underscore-dangle': 'off',
     // 'no-unneeded-ternary': 'off',
     'no-unneeded-ternary': ['error', {
-      defaultAssignment: false
+      'defaultAssignment': false
     }],
     // 'no-whitespace-before-property': 'off',
     'no-whitespace-before-property': 'error',
@@ -315,7 +315,7 @@ module.exports = {
     'object-curly-spacing': ['error', 'never'],
     // 'object-property-newline': 'off',
     'object-property-newline': ['error', {
-      allowMultiplePropertiesPerLine: true
+      'allowMultiplePropertiesPerLine': true
     }],
     // 'one-var-declaration-per-line': 'off',
     'one-var-declaration-per-line': ['error', 'always'],
@@ -329,9 +329,9 @@ module.exports = {
     'padded-blocks': ['error', 'never'],
     // 'quote-props': 'off',
     'quote-props': ['error', 'as-needed', {
-      keywords: false,
-      unnecessary: true,
-      numbers: false
+      'keywords': false,
+      'unnecessary': true,
+      'numbers': false
     }],
     // 'quotes': 'off',
     'quotes': ['error', 'single', {
@@ -341,12 +341,12 @@ module.exports = {
     'require-jsdoc': 'off',
     // 'semi-spacing': 'off',
     'semi-spacing': ['error', {
-      before: false,
-      after: true
+      'before': false,
+      'after': true
     }],
     // 'semi': 'off',
     'semi': ['error', 'always', {
-      omitLastInOneLineBlock: true
+      'omitLastInOneLineBlock': true
     }],
     // 'sort-keys': 'off',
     'sort-keys': 'off',
@@ -360,12 +360,12 @@ module.exports = {
     'space-in-parens': ['error', 'never'],
     // 'space-infix-ops': 'off',
     'space-infix-ops': ['error', {
-      int32Hint: false
+      'int32Hint': false
     }],
     // 'space-unary-ops': 'off',
     'space-unary-ops': ['error', {
-      words: true,
-      nonwords: false
+      'words': true,
+      'nonwords': false
     }],
     // 'spaced-comment': 'off',
     'spaced-comment': ['error', 'always'],
