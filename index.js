@@ -158,17 +158,41 @@ module.exports = {
     // Variables (http://eslint.org/docs/rules/#variables)
     // These rules relate to variable declarations:
     // 'init-declarations': 'off',
+    'init-declarations': 'off',
     // 'no-catch-shadow': 'off',
+    'no-catch-shadow': 'off',
     // 'no-delete-var': 'error',
+    'no-delete-var': 'error',
     // 'no-label-var': 'off',
+    'no-label-var': 'error',
     // 'no-restricted-globals': 'off',
-    // 'no-shadow-restricted-names': 'off',
+    'no-restricted-globals': 'off',
     // 'no-shadow': 'off',
-    // 'no-undef-init': 'off',
+    'no-shadow': 'error',
+    // 'no-shadow-restricted-names': 'off',
+    'no-shadow-restricted-names': 'error',
     // 'no-undef': 'error',
+    'no-undef': 'error',
+    // 'no-undef-init': 'off',
+    'no-undef-init': 'error',
     // 'no-undefined': 'off',
+    'no-undefined': 'off',
     // 'no-unused-vars': 'error',
+    'no-unused-vars': ['error', {
+      'vars': 'all',
+      // 'varsIgnorePattern': null,
+      'args': 'after-used',
+      'ignoreRestSiblings': true,
+      // 'argsIgnorePattern': null,
+      // 'caughtErrors': null,
+      // 'caughtErrorsIgnorePattern': null
+    }],
     // 'no-use-before-define': 'off',
+    'no-use-before-define': ['error', {
+      'functions': true,
+      'classes': true,
+      'variables': true
+    }],
 
     // Node.js and CommonJS (http://eslint.org/docs/rules/#nodejs-and-commonjs)
     // These rules relate to code running in Node.js, or in browsers with CommonJS:
