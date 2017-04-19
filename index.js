@@ -173,15 +173,25 @@ module.exports = {
     // Node.js and CommonJS (http://eslint.org/docs/rules/#nodejs-and-commonjs)
     // These rules relate to code running in Node.js, or in browsers with CommonJS:
     // 'callback-return': 'off',
+    'callback-return': 'off',
     // 'global-require': 'off',
+    'global-require': 'error',
     // 'handle-callback-err': 'off',
+    'handle-callback-err': 'off',
     // 'no-mixed-requires': 'off',
+    'no-mixed-requires': 'error',
     // 'no-new-require': 'off',
+    'no-new-require': 'error',
     // 'no-path-concat': 'off',
+    'no-path-concat': 'error',
     // 'no-process-env': 'off',
+    'no-process-env': 'off',
     // 'no-process-exit': 'off',
+    'no-process-exit': 'off',
     // 'no-restricted-modules': 'off',
+    'no-restricted-modules': 'off',
     // 'no-sync': 'off',
+    'no-sync': 'off',
 
     // Stylistic Issues (http://eslint.org/docs/rules/#stylistic-issues)
     // These rules relate to style guidelines, and are therefore quite subjective:
