@@ -42,7 +42,11 @@ module.exports = {
     // 'no-extra-boolean-cast': 'error',
     'no-extra-boolean-cast': 'error',
     // 'no-extra-parens': 'off',
-    'no-extra-parens': ['error', 'all'],
+    'no-extra-parens': ['error', 'all', {
+      'conditionalAssign': true,
+      'returnAssign': true,
+      'nestedBinaryExpressions': false
+    }],
     // 'no-extra-semi': 'error',
     'no-extra-semi': 'error',
     // 'no-func-assign': 'error',
