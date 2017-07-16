@@ -11,10 +11,10 @@
   "repository": "IBMResearch/eslint-config-ibmresearch",
   "main": "index.js",
   "devDependencies": {
-    "eslint": "^4.0.0"
+    "eslint": "^4.2.0"
   },
   "peerDependencies": {
-    "eslint": "^4.0.0",
+    "eslint": "^4.2.0",
     "eslint-plugin-html": "^3.1.0"
   },
   "engines": {

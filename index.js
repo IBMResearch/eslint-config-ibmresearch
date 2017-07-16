@@ -15,6 +15,8 @@ module.exports = {
     // These rules relate to possible syntax or logic errors in JavaScript code:
     // 'for-direction': 'off',
     'for-direction': 'error',
+    // 'getter-return': 'off',
+    'getter-return': 'error',
     // 'no-await-in-loop': 'off',
     'no-await-in-loop': 'error',
     // 'no-compare-neg-zero': 'error',
