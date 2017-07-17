@@ -13,9 +13,13 @@ module.exports = {
   rules: {
     // Possible Errors (http://eslint.org/docs/rules/#possible-errors)
     // These rules relate to possible syntax or logic errors in JavaScript code:
+    // 'for-direction': 'off',
+    'for-direction': 'error',
+    // 'getter-return': 'off',
+    'getter-return': 'error',
     // 'no-await-in-loop': 'off',
     'no-await-in-loop': 'error',
-    // 'no-compare-neg-zero': 'off',
+    // 'no-compare-neg-zero': 'error',
     'no-compare-neg-zero': 'error',
     // 'no-cond-assign': 'error',
     'no-cond-assign': ['error', 'except-parens'],
@@ -144,7 +148,7 @@ module.exports = {
     // 'no-unused-labels': 'error',
     // 'no-useless-call': 'off',
     // 'no-useless-concat': 'off',
-    // 'no-useless-escape': 'off',
+    // 'no-useless-escape': 'error',
     // 'no-useless-return': 'off',
     // 'no-void': 'off',
     // 'no-warning-comments': 'off',
@@ -206,6 +210,8 @@ module.exports = {
     'global-require': 'error',
     // 'handle-callback-err': 'off',
     'handle-callback-err': 'off',
+    // 'no-buffer-constructor': 'off',
+    'no-buffer-constructor': 'error',
     // 'no-mixed-requires': 'off',
     'no-mixed-requires': 'error',
     // 'no-new-require': 'off',
@@ -223,8 +229,14 @@ module.exports = {
 
     // Stylistic Issues (http://eslint.org/docs/rules/#stylistic-issues)
     // These rules relate to style guidelines, and are therefore quite subjective:
+    // 'array-bracket-newline': 'off',
+    'array-bracket-newline': ['off', {
+      'multiline': true
+    }],
     // 'array-bracket-spacing': 'off',
     'array-bracket-spacing': ['error', 'never'],
+    // 'array-element-newline': 'off',
+    'array-element-newline': 'off',
     // 'block-spacing': 'off',
     'block-spacing': ['error', 'always'],
     // 'brace-style': 'off',
@@ -279,6 +291,8 @@ module.exports = {
       // 'CallExpression': null,
       'ArrayExpression': 1,
       'ObjectExpression': 1,
+      // 'flatTernaryExpressions': false
+      'flatTernaryExpressions': false
     }],
     // 'jsx-quotes': 'off',
     'jsx-quotes': ['error', 'prefer-double'],
@@ -301,8 +315,6 @@ module.exports = {
     // 'linebreak-style': 'off',
     'linebreak-style': ['error', 'unix'],
     // 'lines-around-comment': 'off',
-    'lines-around-comment': 'off',
-    // 'lines-around-directive': 'off',
     'lines-around-directive': ['error', {
       'before': 'always',
       'after': 'always',
@@ -347,10 +359,6 @@ module.exports = {
     }],
     // 'new-parens': 'off',
     'new-parens': 'error',
-    // 'newline-after-var': 'off',
-    'newline-after-var': 'off',
-    // 'newline-before-return': 'off',
-    'newline-before-return': 'error',
     // 'newline-per-chained-call': 'off',
     'newline-per-chained-call': ['error', {
       'ignoreChainWithDepth': 4
@@ -429,6 +437,8 @@ module.exports = {
     'operator-linebreak': 'off',
     // 'padded-blocks': 'off',
     'padded-blocks': ['error', 'never'],
+    // 'padding-line-between-statements': 'off',
+    'padding-line-between-statements': 'off',
     // 'quote-props': 'off',
     'quote-props': ['error', 'as-needed', {
       'keywords': false,
@@ -446,6 +456,8 @@ module.exports = {
       'before': false,
       'after': true
     }],
+    // 'semi-style': 'off',
+    'semi-style': ['error', 'last'],
     // 'semi': 'off',
     'semi': ['error', 'always', {
       'omitLastInOneLineBlock': true
@@ -471,6 +483,11 @@ module.exports = {
     }],
     // 'spaced-comment': 'off',
     'spaced-comment': ['error', 'always'],
+    // 'switch-colon-spacing': 'off',
+    'switch-colon-spacing': ['error', {
+      'after': true,
+      'before': false
+    }],
     // 'template-tag-spacing': 'off',
     'template-tag-spacing': ['error', 'never'],
     // 'unicode-bom': 'off',
