@@ -291,6 +291,7 @@ module.exports = {
       // 'CallExpression': null,
       'ArrayExpression': 1,
       'ObjectExpression': 1,
+      'ImportDeclaration': 1,
       // 'flatTernaryExpressions': false
       'flatTernaryExpressions': false
     }],
