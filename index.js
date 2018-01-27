@@ -230,8 +230,9 @@ module.exports = {
     // Stylistic Issues (http://eslint.org/docs/rules/#stylistic-issues)
     // These rules relate to style guidelines, and are therefore quite subjective:
     // 'array-bracket-newline': 'off',
-    'array-bracket-newline': ['off', {
-      'multiline': true
+    'array-bracket-newline': ['error', {
+      'multiline': true,
+      'minItems': 1
     }],
     // 'array-bracket-spacing': 'off',
     'array-bracket-spacing': ['error', 'never'],
@@ -269,9 +270,11 @@ module.exports = {
     // 'func-name-matching': 'off',
     'func-name-matching': ['error', 'always'],
     // 'func-names': 'off',
-    'func-names': ['off', 'always'],
+    'func-names': ['error', 'always'],
     // 'func-style': 'off',
-    'func-style': ['off', 'expression'],
+    'func-style': ['error', 'expression'],
+    // 'function-paren-newline': 'off',
+    'function-paren-newline': ['error', 'multiline'],
     // 'id-blacklist': 'off',
     'id-blacklist': 'off',
     // 'id-length': 'off',
@@ -309,9 +312,9 @@ module.exports = {
       'after': true
     }],
     // 'line-comment-position': 'off',
-    'line-comment-position': ['off', {
+    'line-comment-position': ['error', {
       'position': 'above',
-      'applyDefaultPatterns': true,
+      'applyDefaultPatterns': true
     }],
     // 'linebreak-style': 'off',
     'linebreak-style': ['error', 'unix'],
@@ -331,7 +334,7 @@ module.exports = {
       'ignoreRegExpLiterals': true
     }],
     // 'max-lines': 'off',
-    'max-lines': ['off', {
+    'max-lines': ['error', {
       'max': 300,
       'skipBlankLines': true,
       'skipComments': true
@@ -339,13 +342,13 @@ module.exports = {
     // 'max-nested-callbacks': 'off',
     'max-nested-callbacks': 'off',
     // 'max-params': 'off',
-    'max-params': ['off', 3],
+    'max-params': ['error', 3],
     // 'max-statements-per-line': 'off',
-    'max-statements-per-line': ['off', {
+    'max-statements-per-line': ['error', {
       'max': 1
     }],
     // 'max-statements': 'off',
-    'max-statements': ['off', 10],
+    'max-statements': ['error', 10],
     // 'multiline-ternary': 'off',
     'multiline-ternary': ['error', 'never'],
     // 'new-cap': 'off',
