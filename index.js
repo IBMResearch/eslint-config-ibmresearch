@@ -230,10 +230,7 @@ module.exports = {
     // Stylistic Issues (http://eslint.org/docs/rules/#stylistic-issues)
     // These rules relate to style guidelines, and are therefore quite subjective:
     // 'array-bracket-newline': 'off',
-    'array-bracket-newline': ['error', {
-      'multiline': true,
-      'minItems': 1
-    }],
+    'array-bracket-newline': ['error', 'consistent'],
     // 'array-bracket-spacing': 'off',
     'array-bracket-spacing': ['error', 'never'],
     // 'array-element-newline': 'off',
@@ -274,7 +271,7 @@ module.exports = {
     // 'func-style': 'off',
     'func-style': ['error', 'expression'],
     // 'function-paren-newline': 'off',
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['error', 'consistent'],
     // 'id-blacklist': 'off',
     'id-blacklist': 'off',
     // 'id-length': 'off',
