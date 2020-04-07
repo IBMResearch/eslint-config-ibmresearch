@@ -2,22 +2,56 @@
   "name": "eslint-config-ibmresearch",
   "version": "0.9.1",
   "description": "ESLint shareable config for the IBM Research JavaScript style guide",
-  "author": "The IBM Research authors",
+  "license": "MIT",
+  "repository": "github:IBMResearch/eslint-config-ibmresearch",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "format": "npm run format:prettier",
+    "format:prettier": "prettier --write \"**/*{js,json,md}\"",
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "eslint \"**/*.js\""
+  },
   "keywords": [
     "eslint",
-    "eslintconfig"
+    "eslint-config"
   ],
-  "license": "MIT",
-  "repository": "IBMResearch/eslint-config-ibmresearch",
-  "main": "index.js",
-  "devDependencies": {
-    "eslint": "^4.11.0"
+  "optionalDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint-plugin-lit": "^1.2.0",
+    "eslint-plugin-wc": "^1.2.0"
   },
   "peerDependencies": {
-    "eslint": "^4.11.0",
-    "eslint-plugin-html": "^4.0.0"
+    "eslint": "^6.8.0"
   },
-  "engines": {
-    "node": ">=6.0"
+  "dependencies": {
+    "eslint-config-prettier": "^6.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "husky": "^4.2.0",
+    "lint-staged": "^10.1.0",
+    "prettier": "2.0.4",
+    "prettier-plugin-package": "^1.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*{js,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true
   }
 }
