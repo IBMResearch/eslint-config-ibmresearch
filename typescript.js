@@ -9,6 +9,7 @@
 
 module.exports = {
   extends: [
+    'ibmresearch',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
@@ -16,9 +17,6 @@ module.exports = {
     'prettier/@typescript-eslint',
   ],
   parser: '@typescript-eslint/parser',
-  env: {
-    node: true,
-  },
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',

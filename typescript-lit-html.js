@@ -13,10 +13,6 @@ module.exports = {
     'plugin:wc/best-practice',
     'plugin:lit/recommended',
   ],
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
   env: {
     node: false,
     browser: true,
