@@ -59,7 +59,6 @@
     ]
   },
   "prettier": {
-    "quoteProps": "consistent",
     "singleQuote": true
   }
 }
