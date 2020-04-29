@@ -24,8 +24,8 @@
     "eslint-config"
   ],
   "optionalDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
     "eslint-plugin-lit": "^1.2.0",
     "eslint-plugin-wc": "^1.2.0"
   },
