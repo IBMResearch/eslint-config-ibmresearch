@@ -6,7 +6,8 @@
   "repository": "github:IBMResearch/eslint-config-ibmresearch",
   "main": "index.js",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
   },
   "scripts": {
     "format": "npm run format:prettier",
@@ -23,14 +24,13 @@
     "eslint",
     "eslint-config"
   ],
-  "optionalDependencies": {
+  "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-lit": "^1.2.0",
-    "eslint-plugin-wc": "^1.2.0"
-  },
-  "peerDependencies": {
-    "eslint": "^6.8.0"
+    "eslint-plugin-wc": "^1.2.0",
+    "prettier": "^2.0.0"
   },
   "dependencies": {
     "eslint-config-prettier": "^6.11.0"
@@ -38,7 +38,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "husky": "^4.2.0",
-    "lint-staged": "^10.2.2",
+    "lint-staged": "^10.2.0",
     "prettier": "2.0.5",
     "prettier-plugin-package": "^1.0.0"
   },
@@ -57,6 +57,20 @@
     "**/*.js": [
       "eslint --fix"
     ]
+  },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-lit": {
+      "optional": true
+    },
+    "eslint-plugin-wc": {
+      "optional": true
+    }
   },
   "prettier": {
     "singleQuote": true

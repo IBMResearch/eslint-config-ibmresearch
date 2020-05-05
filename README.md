@@ -7,19 +7,19 @@
 #### JavaScript
 
 ```
-npm install --save-dev eslint eslint-config-ibmresearch
+npm install --save-dev eslint eslint-config-ibmresearch prettier
 ```
 
 #### TypeScript
 
 ```
-npm install --save-dev eslint eslint-config-ibmresearch @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install --save-dev eslint eslint-config-ibmresearch prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 #### TypeScript (with lit-html)
 
 ```
-npm install --save-dev eslint eslint-config-ibmresearch @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-lit eslint-plugin-wc
+npm install --save-dev eslint eslint-config-ibmresearch prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-lit eslint-plugin-wc
 ```
 
 ## Usage
