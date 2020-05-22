@@ -17,5 +17,4 @@ module.exports = {
     node: false,
     browser: true,
   },
-  plugins: ['@typescript-eslint', 'wc', 'lit'],
 };
