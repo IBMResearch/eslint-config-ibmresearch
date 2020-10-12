@@ -6,11 +6,11 @@
   "repository": "github:IBMResearch/eslint-config-ibmresearch",
   "main": "index.js",
   "engines": {
-    "node": ">=12.0.0",
-    "npm": ">=6.0.0"
+    "node": ">=12.0.0"
   },
   "scripts": {
-    "format": "npm run format:prettier",
+    "format": "npm-run-all format:*",
+    "format:eslint": "npm run lint:eslint -- --fix",
     "format:prettier": "prettier --write \"**/*{js,json,md}\"",
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint \"**/*.js\""
@@ -39,6 +39,7 @@
     "eslint": "^7.11.0",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "~2.1.2",
     "prettier-plugin-package": "^1.2.0"
   },
