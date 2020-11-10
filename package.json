@@ -32,6 +32,20 @@
     "eslint-plugin-wc": "^1.2.0",
     "prettier": "~2.1.2"
   },
+  "peerDependenciesMeta": {
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
+    "eslint-plugin-lit": {
+      "optional": true
+    },
+    "eslint-plugin-wc": {
+      "optional": true
+    }
+  },
   "dependencies": {
     "eslint-config-prettier": "^6.15.0"
   },
@@ -54,20 +68,6 @@
   "lint-staged": {
     "**/*{js,json,md}": "prettier --write",
     "**/*.js": "eslint --fix"
-  },
-  "peerDependenciesMeta": {
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@typescript-eslint/parser": {
-      "optional": true
-    },
-    "eslint-plugin-lit": {
-      "optional": true
-    },
-    "eslint-plugin-wc": {
-      "optional": true
-    }
   },
   "prettier": {
     "singleQuote": true
