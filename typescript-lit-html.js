@@ -12,6 +12,7 @@ module.exports = {
     'ibmresearch/typescript',
     'plugin:wc/best-practice',
     'plugin:lit/recommended',
+    'plugin:lit-a11y/recommended',
   ],
   env: {
     node: false,
