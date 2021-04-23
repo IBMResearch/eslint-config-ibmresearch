@@ -8,7 +8,7 @@
 'use strict';
 
 module.exports = {
-  extends: ['eslint:recommended', 'prettier'],
+  extends: ['eslint:recommended', require.resolve('./imports'), 'prettier'],
   env: {
     node: true,
     es2020: true,

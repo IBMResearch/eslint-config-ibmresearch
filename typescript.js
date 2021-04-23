@@ -9,12 +9,15 @@
 
 module.exports = {
   extends: [
-    'ibmresearch',
+    require.resolve('./index'),
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+    require.resolve('./imports'),
     'prettier',
   ],
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'import/extensions': ['error', 'ignorePackages', { ts: 'never' }],
   },
 };
