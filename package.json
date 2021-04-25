@@ -20,7 +20,7 @@
   "files": [
     "imports.js",
     "index.js",
-    "typescript-lit-html.js",
+    "typescript-lit.js",
     "typescript.js"
   ],
   "keywords": [

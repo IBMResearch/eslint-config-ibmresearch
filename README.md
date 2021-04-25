@@ -24,7 +24,7 @@ npm install --save-dev eslint eslint-config-ibmresearch prettier @typescript-esl
 
 ## Usage
 
-Once the `eslint-config-ibmresearch` package is installed, you can use it by specifying `ibmresearch`, `ibmresearch/typescript` or `ibmresearch/typescript-lit-html` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
+Once the `eslint-config-ibmresearch` package is installed, you can use it by specifying `ibmresearch`, `ibmresearch/typescript` or `ibmresearch/typescript-lit` in the [`extends`](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) section of your [ESLint configuration](http://eslint.org/docs/user-guide/configuring).
 
 ```js
 {
