@@ -14,7 +14,8 @@
     "format:eslint": "npm run lint:eslint -- --fix",
     "format:prettier": "prettier --write \"**/*{js,json,md}\"",
     "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint \"**/*.js\""
+    "lint:eslint": "eslint \"**/*.js\"",
+    "prepare": "husky install"
   },
   "files": [
     "index.js",
@@ -64,11 +65,6 @@
   },
   "eslintConfig": {
     "extends": "./index.js"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "**/*{js,json,md}": "prettier --write",
