@@ -32,13 +32,14 @@ module.exports = {
     'import/order': [
       'error',
       {
-        'newlines-between': 'always',
         groups: [
           'builtin',
           'external',
           'internal',
           ['parent', 'sibling', 'index'],
         ],
+        'newlines-between': 'always',
+        alphabetize: { order: 'asc' },
       },
     ],
     'import/newline-after-import': 'error',
