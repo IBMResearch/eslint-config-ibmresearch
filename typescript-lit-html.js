@@ -9,7 +9,7 @@
 
 module.exports = {
   extends: [
-    'ibmresearch/typescript',
+    require.resolve('./typescript'),
     'plugin:wc/best-practice',
     'plugin:lit/recommended',
     'plugin:lit-a11y/recommended',
@@ -17,5 +17,10 @@ module.exports = {
   env: {
     node: false,
     browser: true,
+  },
+  rules: {
+    // We use the `.js` extension for TypeScript file paths. But those files
+    // don't really exist, since `@web/dev-server` transforms them on the fly.
+    'import/no-unresolved': 'off',
   },
 };

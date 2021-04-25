@@ -18,6 +18,7 @@
     "prepare": "husky install"
   },
   "files": [
+    "imports.js",
     "index.js",
     "typescript-lit-html.js",
     "typescript.js"
@@ -53,7 +54,8 @@
     }
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.2.0"
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-plugin-import": "^2.22.1"
   },
   "devDependencies": {
     "eslint": "^7.24.0",

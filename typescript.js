@@ -9,9 +9,11 @@
 
 module.exports = {
   extends: [
-    'ibmresearch',
+    require.resolve('./index'),
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:import/typescript',
+    require.resolve('./imports'),
     'prettier',
   ],
   rules: {
