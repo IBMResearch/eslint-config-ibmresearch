@@ -16,7 +16,7 @@ npm install --save-dev eslint eslint-config-ibmresearch prettier
 npm install --save-dev eslint eslint-config-ibmresearch prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
-#### TypeScript (with lit-html)
+#### TypeScript (with Lit)
 
 ```
 npm install --save-dev eslint eslint-config-ibmresearch prettier @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-lit eslint-plugin-wc eslint-plugin-lit-a11y
