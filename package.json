@@ -12,9 +12,9 @@
   "scripts": {
     "format": "npm-run-all format:*",
     "format:eslint": "npm run lint:eslint -- --fix",
-    "format:prettier": "prettier --write \"**/*{js,json,md}\"",
-    "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint \"**/*.js\"",
+    "format:prettier": "prettier . --write",
+    "lint": "npm-run-all --parallel lint:*",
+    "lint:eslint": "eslint .",
     "prepare": "husky install"
   },
   "files": [
@@ -69,10 +69,18 @@
     "extends": "./index.js"
   },
   "lint-staged": {
-    "**/*{js,json,md}": "prettier --write",
+    "**/*{js,json,md,yml}": "prettier --write",
     "**/*.js": "eslint --fix"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.yml",
+        "options": {
+          "singleQuote": false
+        }
+      }
+    ]
   }
 }
