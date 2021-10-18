@@ -31,7 +31,7 @@
     "@typescript-eslint/parser": "4.x",
     "eslint": "7.x",
     "eslint-plugin-lit": "1.x",
-    "eslint-plugin-lit-a11y": "1.x",
+    "eslint-plugin-lit-a11y": "1.x || 2.x",
     "eslint-plugin-wc": "1.x",
     "prettier": "2.x"
   },
