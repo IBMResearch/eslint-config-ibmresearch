@@ -5,9 +5,6 @@
   "license": "MIT",
   "repository": "github:IBMResearch/eslint-config-ibmresearch",
   "main": "index.js",
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "scripts": {
     "format": "npm-run-all format:*",
     "format:eslint": "npm run lint:eslint -- --fix",
