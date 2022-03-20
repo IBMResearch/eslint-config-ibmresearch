@@ -11,7 +11,7 @@
     "format:prettier": "prettier . --write",
     "lint": "npm-run-all --parallel lint:*",
     "lint:eslint": "eslint .",
-    "postinstall": "npx simple-git-hooks"
+    "prepare": "npx simple-git-hooks"
   },
   "files": [
     "imports.js",
