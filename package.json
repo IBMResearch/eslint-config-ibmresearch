@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.27.5"
   },
   "devDependencies": {
     "eslint": "^8.26.0",
